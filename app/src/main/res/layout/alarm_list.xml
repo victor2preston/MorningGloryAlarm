@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.victorpreston.morninggloryalarm.Items.AlarmListFragment">
+        <!--<import type="com.victorpreston.morninggloryalarm.items"></import>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/appName"-->
+            <!--android:layout_width="257dp"-->
+            <!--android:layout_height="27dp"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:text="@+id/app_name"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/alarmList"-->
+            <!--app:layout_constraintEnd_toEndOf="@+id/alarmList"-->
+            <!--app:layout_constraintStart_toStartOf="@+id/alarmList"-->
+            <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+        <ListView
+            android:id="@+id/alarmList"
+            android:layout_width="match_parent"
+            android:layout_height="402dp"
+            android:layout_marginBottom="138dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+            <!--app:layout_constraintTop_toBottomOf="@+id/appName" >-->
+        </ListView>
+
+        <ImageButton
+            android:id="@+id/newButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="false"
+            android:clickable="true"
+            android:elevation="5dp"
+            android:focusable="true"
+            android:scaleType="fitEnd"
+            android:scaleX="8"
+            android:scaleY="8"
+            app:layout_anchorGravity="end|bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@drawable/ic_new_alarm"
+            tools:layout_marginBottom="@dimen/fab_margin"
+            tools:layout_marginRight="@dimen/fab_margin"
+            tools:scaleType="fitEnd"
+            tools:scaleX="8"
+            tools:srcCompat="@drawable/ic_new_alarm" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

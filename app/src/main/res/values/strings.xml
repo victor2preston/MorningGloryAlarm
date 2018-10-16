@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Morning Glory Alarm</string>
     <string name="action_settings">Settings</string>
+    <string name="AlarmName">Alarm 1</string>
+    <string name="Name">Name</string>
+    <string name="Hour">Hour</string>
+    <string name="DefaultAlarmName">Alarm 1</string>
+    <string name="AlarmNameString">AlarmName</string>
+    <string name="AlarmActiveString">AlarmActive</string>"
 </resources>
